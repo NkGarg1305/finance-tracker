@@ -129,6 +129,8 @@ if __name__ == "__main__":
             confirm = input("Are you sure you want to exit? (y/n): ").lower()
             if confirm == "y":
                 print("Exiting tracker. Goodbye!")
+                with open("history.txt","a") as f
+                    f.write("\n"+tracker.calculate_balance():.2f)
                 break
             else:
                 print("Returning to the menu.")
